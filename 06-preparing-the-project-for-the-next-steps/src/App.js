@@ -3,6 +3,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import MoviesList from './components/MoviesList';
 import AddMovie from './components/AddMovie';
 import './App.css';
+import LoginWithApple from './components/loginapple';
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -69,6 +70,9 @@ function App() {
 
   return (
     <React.Fragment>
+      <section>
+      <LoginWithApple />
+      </section>
       <section>
         <AddMovie onAddMovie={addMovieHandler} />
       </section>
